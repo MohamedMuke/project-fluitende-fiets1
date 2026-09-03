@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 25;
+    text-decoration: none;
+    color : black;
+}
+.logo h1{
+    margin: 0px;
+    color: black;
+}
+
+header img{
+    width: 100px;
+    height: auto;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #4f46e5;
+}
+.welkom {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 80px;
+    gap: 50px;
+}
+.welkom-tekst{
+    text-align: center;
+}
+.welkom-tekst h1{
+    font-size: 48px;
+    margin-bottom: 15;
+}
+.welkom-tekst p {
+    font-size: 20px;
+    margin-bottom: 30;
+}
+.knop{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.knop:hover{
+    background-color: blue;
+}
