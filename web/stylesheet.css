@@ -158,3 +158,110 @@ nav a:hover{
     object-fit: cover;
     border-radius: 10px;
 }
+.waarom-ons {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.waarom-ons h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.voordelen {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.voordeel {
+    width: 300px;
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.voordeel h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: #00152f;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-inhoud {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 80px;
+}
+
+.footer-kolom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 22%;
+}
+
+.footer-kolom h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-kolom a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-kolom a:hover {
+    text-decoration: underline;
+}
+
+.footer-kolom p {
+    margin: 0 0 15px;
+    font-size: 16px;
+}
+
+.footer-kolom h4 {
+    color: #ff7900;
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+.footer-kolom.contact h3 {
+    color: #ff7900;
+}
+
+.footer-onderkant {
+    background-color: #f1f3f5;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.footer-onderkant p {
+    margin: 0;
+}
+
+.footer-onderkant div {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-onderkant a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-onderkant a:hover {
+    text-decoration: underline;
+}
