@@ -19,7 +19,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    gap: 25;
+    gap: 25px;
     text-decoration: none;
     color : black;
 }
@@ -59,11 +59,11 @@ nav a:hover{
 }
 .welkom-tekst h1{
     font-size: 48px;
-    margin-bottom: 15;
+    margin-bottom: 15px;
 }
 .welkom-tekst p {
     font-size: 20px;
-    margin-bottom: 30;
+    margin-bottom: 30px;
 }
 .knop{
     display: inline-block;
@@ -96,7 +96,7 @@ nav a:hover{
 }
 .fiets-kaart{
     width: 350px;
-    padding: 20;
+    padding: 20px;
     border: 1px solid #dddddd; 
     border-radius: 10px;
     background-color: white;
@@ -125,12 +125,12 @@ nav a:hover{
     margin: 20px auto 0;
 }
 .over-ons {
-    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    padding: 60px 80px;
+    gap: 60px;
+    padding: 80px;
+    background-color: #f5f7fa;
 }
 
 .over-ons-tekst {
@@ -138,14 +138,14 @@ nav a:hover{
 }
 
 .over-ons-tekst h2 {
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 20px;
 }
 
 .over-ons-tekst p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .over-ons-afbeelding {
@@ -154,9 +154,9 @@ nav a:hover{
 
 .over-ons-afbeelding img {
     width: 100%;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .waarom-ons {
     padding: 60px 80px;
@@ -205,13 +205,13 @@ footer {
 .footer-kolom {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     width: 22%;
 }
 
 .footer-kolom h3 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer-kolom a {
@@ -231,12 +231,17 @@ footer {
 
 .footer-kolom h4 {
     color: #ff7900;
-    font-size: 20px;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
 }
 
-.footer-kolom.contact h3 {
+.footer-contact h3 {
     color: #ff7900;
+}
+.footer-contact h4{
+    margin: 5px;
+}
+.footer-contact p{
+    margin: 0 0 10px;
 }
 
 .footer-onderkant {
@@ -264,4 +269,149 @@ footer {
 
 .footer-onderkant a:hover {
     text-decoration: underline;
+}
+.contact {
+    display: flex;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-formulier {
+    width: 50%;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.contact-formulier form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-formulier input,
+.contact-formulier textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-formulier button {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.fietsen{
+    padding: 60px 80px;
+    text-align: center;
+}
+.fietsen h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.fietsen > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.fietsen-overzicht {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.fiets{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.fiets img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+.fiets h3{
+    font-size: 22px;
+}
+.fiets p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     .welkom {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .welkom-tekst {
+        width: 100%;
+    }
+
+    .welkom-tekst h1 {
+        font-size: 36px;
+    }
+
+    .welkom-afbeelding {
+        width: 100%;
+    }
+    .over-ons {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .over-ons-tekst {
+        width: 100%;
+    }
+
+    .over-ons-afbeelding {
+        width: 100%;
+    }
+    .voordelen {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-formulier {
+        width: 100%;
+    }
+
+    .fietsen-overzicht {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-inhoud {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-kolom {
+        width: 100%;
+    }
+
+    .footer-onderkant {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
 }
