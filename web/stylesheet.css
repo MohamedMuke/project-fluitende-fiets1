@@ -415,3 +415,45 @@ footer {
     }
 
 }
+.verhuur {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 80px;
+}
+
+.verhuur-tekst {
+    width: 50%;
+}
+
+.verhuur-afbeelding {
+    width: 50%;
+}
+
+.verhuur-afbeelding img {
+    width: 100%;
+}
+
+.verhuur-fietsen {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.verhuur-overzicht {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.verhuur-kaart {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.verhuur-kaart img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
