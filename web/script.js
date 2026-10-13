@@ -3,7 +3,7 @@ var melding = document.getElementById("melding");
 
 
 function UpdateClock() {
-    // Controleer of de klok op deze pagina bestaat; zo niet, stop direct 
+    
     const clockElement = document.getElementById("clock"); 
     const statusText = document.getElementById("statusText"); 
     if (!clockElement || !statusText) return;
@@ -22,7 +22,6 @@ function UpdateClock() {
 
     document.getElementById("clock").textContent = timeString;
 
-    //const statusText = document.getElementById("statusText");
 
     if (now.getHours() >= 10 && now.getHours() < 18) {
         statusText.textContent = "We zijn geopend";

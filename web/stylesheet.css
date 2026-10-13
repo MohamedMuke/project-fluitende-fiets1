@@ -1,419 +1,422 @@
-* {
-    box-sizing: border-box;
+*{
+box-sizing: border-box;
 }
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: white;
+color: black;
 }
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background-color: white;
-    border-bottom: 1px solid #dddddd;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 40px;
+background-color: white;
+border-bottom: 1px solid #dddddd;
 }
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    text-decoration: none;
-    color : black;
+display: flex;
+align-items: center;
+gap: 25px;
+text-decoration: none;
+color : black;
 }
 .logo h1{
-    margin: 0px;
-    color: black;
+margin: 0px;
+color: black;
 }
-
 header img{
-    width: 100px;
-    height: auto;
+width: 100px;
+height: auto;
 }
 nav{
-    display: flex;
-    gap: 20px;
+display: flex;
+gap: 20px;
 }
-
 nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+text-decoration: none;
+color: black;
+font-weight: bold;
 }
-
 nav a:hover{
-    color: #4f46e5;
+color: #4f46e5;
 }
 .welkom {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 80px;
-    gap: 50px;
+min-height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 50px 80px;
+gap: 50px;
 }
 .welkom-tekst{
-    text-align: center;
+text-align: center;
 }
 .welkom-tekst h1{
-    font-size: 48px;
-    margin-bottom: 15px;
+font-size: 48px;
+margin-bottom: 15px;
 }
 .welkom-tekst p {
-    font-size: 20px;
-    margin-bottom: 30px;
+font-size: 20px;
+margin-bottom: 30px;
 }
 .knop{
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #4f46e5;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-   
+display: inline-block;
+padding: 12px 25px;
+background-color: #4f46e5;
+color: white;
+text-decoration: none;
+border-radius: 5px;
 }
 .knop:hover{
-    background-color: blue;
+background-color: blue;
 }
 .uitgelichte-fietsen{
-    font-size: 26px;
-    margin-bottom: 10px;
+font-size: 26px;
+margin-bottom: 10px;
 }
 .uitgelichte-fietsen h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+font-size: 36px;
+margin-bottom: 10px;
 }
 .intro-fietsen {
-    font-size: 18px;
-    margin-bottom: 40px;
+font-size: 18px;
+margin-bottom: 40px;
 }
 .fiets-overzicht {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+display: flex;
+justify-content: center;
+gap: 30px;
 }
 .fiets-kaart{
-    width: 350px;
-    padding: 20px;
-    border: 1px solid #dddddd; 
-    border-radius: 10px;
-    background-color: white;
+width: 350px;
+padding: 20px;
+border: 1px solid #dddddd;
+border-radius: 10px;
+background-color: white;
 }
 .fiets-kaart h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    text-align: center;
+font-size: 22px;
+margin-bottom: 10px;
+text-align: center;
 }
-
 .fiets-kaart p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
 }
 .fiets-kaart img {
-    width: 90%;
-    height: 180px;
-    object-fit: contain;
-    margin: 0 auto 15px;
-    display: block;
+width: 90%;
+height: 180px;
+object-fit: contain;
+margin: 0 auto 15px;
+display: block;
 }
 .uitgelichte-fietsen .knop {
-    display: block;
-    width: fit-content;
-    margin: 20px auto 0;
+display: block;
+width: fit-content;
+margin: 20px auto 0;
 }
 .over-ons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    padding: 80px;
-    background-color: #f5f7fa;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+padding: 80px;
+background-color: #f5f7fa;
 }
-
 .over-ons-tekst {
-    width: 50%;
+width: 50%;
 }
-
 .over-ons-tekst h2 {
-    font-size: 44px;
-    margin-bottom: 20px;
+font-size: 44px;
+margin-bottom: 20px;
 }
-
 .over-ons-tekst p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+font-size: 18px;
+line-height: 1.6;
+margin-bottom: 20px;
 }
-
 .over-ons-afbeelding {
-    width: 50%;
+width: 50%;
 }
-
 .over-ons-afbeelding img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
+width: 100%;
+height: 400px;
+object-fit: cover;
+border-radius: 15px;
 }
 .waarom-ons {
-    padding: 60px 80px;
-    text-align: center;
+padding: 60px 80px;
+text-align: center;
 }
-
 .waarom-ons h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+font-size: 36px;
+margin-bottom: 40px;
 }
-
 .voordelen {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-
+display: flex;
+justify-content: center;
+gap: 30px;
 }
-
 .voordeel {
-    width: 300px;
-    padding: 25px;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    background-color: white;
+width: 300px;
+padding: 25px;
+border: 1px solid #dddddd;
+border-radius: 10px;
+background-color: white;
 }
-
 .voordeel h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
+font-size: 22px;
+margin-bottom: 15px;
 }
-
 
 footer {
-    background-color: #00152f;
-    color: white;
-    margin-top: 60px;
+background-color: #00152f;
+color: white;
+margin-top: 60px;
 }
-
 .footer-inhoud {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    padding: 60px 80px;
+display: flex;
+justify-content: space-between;
+gap: 50px;
+padding: 60px 80px;
 }
-
 .footer-kolom {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 22%;
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 22%;
 }
-
 .footer-kolom h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+font-size: 20px;
+margin-bottom: 10px;
 }
-
 .footer-kolom a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+color: white;
+text-decoration: none;
+font-size: 16px;
 }
-
 .footer-kolom a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
-
 .footer-kolom p {
-    margin: 0 0 15px;
-    font-size: 16px;
+margin: 0 0 15px;
+font-size: 16px;
 }
-
 .footer-kolom h4 {
-    color: #ff7900;
-    margin: 5px 0 0;
+color: #ff7900;
+margin: 5px 0 0;
 }
-
 .footer-contact h3 {
-    color: #ff7900;
+color: #ff7900;
 }
 .footer-contact h4{
-    margin: 5px;
+margin: 5px;
 }
 .footer-contact p{
-    margin: 0 0 10px;
+margin: 0 0 10px;
 }
-
 .footer-onderkant {
-    background-color: #f1f3f5;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
+background-color: #f1f3f5;
+color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 80px;
 }
-
 .footer-onderkant p {
-    margin: 0;
+margin: 0;
 }
-
 .footer-onderkant div {
-    display: flex;
-    gap: 20px;
+display: flex;
+gap: 20px;
 }
-
 .footer-onderkant a {
-    color: black;
-    text-decoration: none;
+color: black;
+text-decoration: none;
 }
-
 .footer-onderkant a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 .contact {
-    display: flex;
+display: flex;
 }
-
 .contact-info {
-    width: 50%;
+width: 50%;
 }
-
 .contact-formulier {
-    width: 50%;
-    padding: 30px;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
+width: 50%;
+padding: 30px;
+border: 1px solid #dddddd;
+border-radius: 10px;
 }
-
 .contact-formulier form {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
-
 .contact-formulier input,
 .contact-formulier textarea {
-    padding: 10px;
-    margin-bottom: 15px;
+padding: 10px;
+margin-bottom: 15px;
 }
-
 .contact-formulier button {
-    padding: 10px 20px;
-    background-color: #4f46e5;
-    color: white;
-    border: none;
-    border-radius: 5px;
+padding: 10px 20px;
+background-color: #4f46e5;
+color: white;
+border: none;
+border-radius: 5px;
 }
 .fietsen{
-    padding: 60px 80px;
-    text-align: center;
+padding: 60px 80px;
+text-align: center;
 }
 .fietsen h2{
-    font-size: 40px;
-    margin-bottom: 10px;
+font-size: 40px;
+margin-bottom: 10px;
 }
 .fietsen > p {
-    font-size: 18px;
-    margin-bottom: 40px;
+font-size: 18px;
+margin-bottom: 40px;
 }
-
 .fietsen-overzicht {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+display: flex;
+justify-content: center;
+gap: 30px;
 }
 .fiets{
-    width: 100%;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
+width: 100%;
+padding: 20px;
+border: 1px solid white;
+border-radius: 10px;
 }
 .fiets img{
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
+width: 100%;
+height: 180px;
+object-fit: contain;
 }
 .fiets h3{
-    font-size: 22px;
+font-size: 22px;
 }
 .fiets p{
-    font-size: 16px;
-    line-height: 1.5;
+font-size: 16px;
+line-height: 1.5;
 }
 @media (max-width: 600px) {
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-     .welkom {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-
-    .welkom-tekst {
-        width: 100%;
-    }
-
-    .welkom-tekst h1 {
-        font-size: 36px;
-    }
-
-    .welkom-afbeelding {
-        width: 100%;
-    }
-    .over-ons {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-
-    .over-ons-tekst {
-        width: 100%;
-    }
-
-    .over-ons-afbeelding {
-        width: 100%;
-    }
-    .voordelen {
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        width: 100%;
-    }
-
-    .contact-formulier {
-        width: 100%;
-    }
-
-    .fietsen-overzicht {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-inhoud {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .footer-kolom {
-        width: 100%;
-    }
-
-    .footer-onderkant {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
+header {
+flex-direction: column;
+gap: 15px;
+}
+nav {
+flex-wrap: wrap;
+justify-content: center;
+}
+.welkom {
+flex-direction: column;
+padding: 40px 20px;
+}
+.welkom-tekst {
+width: 100%;
+}
+.welkom-tekst h1 {
+font-size: 36px;
+}
+.welkom-afbeelding {
+width: 100%;
+}
+.over-ons {
+flex-direction: column;
+padding: 40px 20px;
+}
+.over-ons-tekst {
+width: 100%;
+}
+.over-ons-afbeelding {
+width: 100%;
+}
+.voordelen {
+flex-direction: column;
+align-items: center;
+}
+.contact {
+flex-direction: column;
+}
+.contact-info {
+width: 100%;
+}
+.contact-formulier {
+width: 100%;
+}
+.fietsen-overzicht {
+flex-direction: column;
+align-items: center;
+}
+.footer-inhoud {
+flex-direction: column;
+gap: 30px;
+}
+.footer-kolom {
+width: 100%;
+}
+.footer-onderkant {
+flex-direction: column;
+gap: 15px;
+text-align: center;
+}
+}
+.verhuur {
+display: flex;
+align-items: center;
+gap: 50px;
+padding: 60px 80px;
+}
+.verhuur-tekst {
+width: 50%;
+}
+.verhuur-afbeelding {
+width: 50%;
+}
+.verhuur-afbeelding img {
+width: 100%;
+}
+.verhuur-fietsen {
+padding: 60px 80px;
+text-align: center;
+}
+.verhuur-overzicht {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+.verhuur-kaart {
+width: 300px;
+padding: 20px;
+border: 1px solid #dddddd;
+border-radius: 10px;
+}
+.verhuur-kaart img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+.voorwaarden {
+padding: 60px 80px;
+max-width: 900px;
+margin: auto;
+}
+.voorwaarden h2 {
+font-size: 40px;
+margin-bottom: 30px;
+}
+.voorwaarden h3 {
+font-size: 22px;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+.voorwaarden p {
+font-size: 17px;
+line-height: 1.6;
 }
 
 #Openingtijden {
