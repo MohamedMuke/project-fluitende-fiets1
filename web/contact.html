@@ -49,24 +49,25 @@
 
                 <h2>Stuur ons een bericht</h2>
 
-                <form>
+                <form id="contactForm">
 
                     <label for="naam">Naam</label>
-                    <input type="text" id="naam" name="naam">
+                    <input type="text" id="naam" name="naam" required>
 
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="onderwerp">Onderwerp</label>
-                    <input type="text" id="onderwerp" name="onderwerp">
+                    <input type="text" id="onderwerp" name="onderwerp" required>
 
                     <label for="bericht">Bericht</label>
-                    <textarea id="bericht" name="bericht"></textarea>
+                    <textarea id="bericht" name="bericht" required></textarea>
 
                     <button type="submit">Verstuur bericht</button>
 
-                </form>
+                    <p id="melding"></p>
 
+                </form>
             </div>
 
         </section>
@@ -124,5 +125,6 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
