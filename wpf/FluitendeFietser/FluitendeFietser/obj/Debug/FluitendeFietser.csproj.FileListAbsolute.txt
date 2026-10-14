@@ -1,0 +1,16 @@
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\bin\Debug\FluitendeFietser.exe.config
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\bin\Debug\FluitendeFietser.exe
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\bin\Debug\FluitendeFietser.pdb
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.csproj.AssemblyReference.cache
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\MainWindow.baml
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\MainWindow.g.cs
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\App.g.cs
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser_MarkupCompile.cache
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.g.resources
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.Properties.Resources.resources
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.csproj.GenerateResource.cache
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.csproj.CoreCompileInputs.cache
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.exe
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser.pdb
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\bin\Debug\artikelen.csv
+C:\Users\Ege\OneDrive - Summacollege O365\MBO 4 SD\Projectmatig Werken Basis\FluitendeFietser\FluitendeFietser\obj\Debug\FluitendeFietser_Content.g.cs
