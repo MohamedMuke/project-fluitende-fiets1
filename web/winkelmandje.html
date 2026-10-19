@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelmandje - Fluitende Fietser</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo Fluitende Fietser">
+            <h1>Fluitende Fietser</h1>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fietsen.html">Fietsen</a>
+            <a href="verhuur.html">Verhuur</a>
+            <a href="over-ons.html">Over ons</a>
+            <a href="contact.html">Contact</a>
+            <a href="winkelmandje.html">Winkelmandje</a>
+        </nav>
+    </header>
+
+    <main>
+        
+<section class="winkelmandje">
+    <h2>Mijn winkelmandje</h2>
+    <p>Hier zie je de fietsen die je hebt gekozen.</p>
+
+    <div class="fiets-keuze" id="rij-gazelle">
+        <input type="checkbox" id="gazelle" checked onchange="berekenTotaal()">
+
+        <img src="images/fietsen/Gazelle_CityGo_C7.jpg"
+             alt="Gazelle CityGo C7">
+
+        <div class="fiets-info">
+            <h3>Gazelle CityGo C7</h3>
+            <p>Comfortabele stadsfiets.</p>
+        </div>
+
+        <p class="fiets-prijs">€ 699,00</p>
+        <button type="button" onclick="verwijderFiets('gazelle', 'rij-gazelle')">Verwijderen</button>
+    </div>
+
+    <div class="fiets-keuze" id="rij-orange">
+        <input type="checkbox" id="orange" onchange="berekenTotaal()">
+
+        <img src="images/fietsen/Gazelle_Orange_C7.jpg"
+             alt="Gazelle Orange C7">
+
+        <div class="fiets-info">
+            <h3>Gazelle Orange C7</h3>
+            <p>Een fijne fiets voor dagelijks gebruik.</p>
+        </div>
+
+        <p class="fiets-prijs">€ 899,00</p>
+        <button type="button" onclick="verwijderFiets('orange', 'rij-orange')">Verwijderen</button>
+    </div>
+
+    <div class="fiets-keuze" id="rij-stella">
+        <input type="checkbox" id="stella" checked onchange="berekenTotaal()">
+
+        <img src="images/fietsen/Stella_Allegra_voorwielmotor.jpg"
+             alt="Stella Allegra">
+
+        <div class="fiets-info">
+            <h3>Stella Allegra</h3>
+            <p>Elektrische fiets met extra comfort.</p>
+        </div>
+
+        <p class="fiets-prijs">€ 1.499,00</p>
+        <button type="button" onclick="verwijderFiets('stella', 'rij-stella')">
+            Verwijderen
+        </button>
+    </div>
+
+    <h3 id="totaalprijs">Totaalprijs: € 2.198,00</h3>
+
+    <button type="button" onclick="maakWinkelmandjeLeeg()">Winkelmandje leegmaken</button>
+    <button type="button" onclick="afrekenen()">Verder naar afrekenen</button>
+</section>
+
+    </main>
+
+    <footer>
+         <div class="footer-inhoud">
+
+        <div class="footer-kolom">
+            <h3>Populaire fietsen</h3>
+            <a href="fietsen.html">Gazelle</a>
+            <a href="fietsen.html">Stella</a>
+            <a href="fietsen.html">Pelikaan</a>
+            <a href="fietsen.html">Sparta</a>
+            <a href="fietsen.html">Batavus</a>
+        </div>
+
+        <div class="footer-kolom">
+            <h3>Veel bezocht</h3>
+            <a href="fietsen.html">Onze fietsen</a>
+            <a href="verhuur.html">Fietsverhuur</a>
+            <a href="over-ons.html">Over ons</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-kolom">
+            <h3>Klantenservice</h3>
+            <a href="contact.html">Veelgestelde vragen</a>
+            <a href="contact.html">Garantie</a>
+            <a href="contact.html">Reparatie</a>
+            <a href="contact.html">Retourneren</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-kolom footer-contact">
+            <h3>Wij helpen je graag</h3>
+            <h4>Bel ons</h4>
+            <p>025-0224-526</p>
+            <h4>Mail ons</h4>
+            <p>info@fluitendefietser.nl</p>
+        </div>
+
+    </div>
+
+    <div class="footer-onderkant">
+        <p>&copy; 2026 Fluitende Fietser</p>
+
+        <div>
+            <a href="privacy.html">Privacy</a>
+            <a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
+            <a href="#">Cookies</a>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

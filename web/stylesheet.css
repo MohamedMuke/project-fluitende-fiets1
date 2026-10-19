@@ -61,6 +61,7 @@ nav a:hover {
 }
 
 .welkom-tekst {
+    flex: 1;
     text-align: center;
 }
 
@@ -436,11 +437,9 @@ footer {
 
 /* Openingstijden en klok */
 #Openingtijden {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 #clock {
@@ -479,7 +478,7 @@ footer {
     }
 }
 
-/* Mobiele weergave */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -506,6 +505,14 @@ footer {
 
     .welkom-afbeelding {
         width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+    .welkom-afbeelding {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
     }
 
     .over-ons {
@@ -575,3 +582,390 @@ footer {
         text-align: center;
     }
 }
+
+.welkom-afbeelding.fotocarrousel {
+    flex: 1;
+    min-width: 0;
+    height: 350px;
+    overflow: hidden;
+}
+
+.welkom-afbeelding.fotocarrousel img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+}
+
+.welkom-afbeelding.fotocarrousel button {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.winkelmandje {
+    padding: 60px 80px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.winkelmandje h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#winkelmand-inhoud {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+#totaalprijs {
+    text-align: right;
+    margin-top: 25px;
+}
+.winkelmandje {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.winkelmandje h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.winkelmandje > p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.fiets-keuze {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.fiets-keuze input {
+    width: 18px;
+    height: 18px;
+}
+
+.fiets-keuze img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.fiets-info {
+    flex: 1;
+}
+
+.fiets-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.fiets-info p {
+    margin: 0;
+}
+
+.fiets-prijs {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fiets-keuze button {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#totaalprijs {
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #dddddd;
+    font-size: 26px;
+}
+
+.winkelmandje > button {
+    padding: 12px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.winkelmandje > button:last-child {
+    background-color: #123f82;
+    color: white;
+}
+
+.privacy {
+    padding: 60px 80px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.privacy h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.privacy h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.privacy p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .welkom,
+    .over-ons,
+    .verhuur {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .welkom-tekst h1 {
+        font-size: 36px;
+    }
+
+    .fiets-overzicht,
+    .fietsen-overzicht,
+    .voordelen,
+    .verhuur-overzicht {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fiets-kaart,
+    .fiets,
+    .voordeel,
+    .verhuur-kaart {
+        width: calc(50% - 20px);
+    }
+
+    .contact {
+        padding: 40px 30px;
+        gap: 25px;
+    }
+
+    .contact-info,
+    .contact-formulier {
+        width: calc(50% - 13px);
+    }
+
+    .footer-inhoud {
+        padding: 40px 30px;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .footer-kolom {
+        width: calc(50% - 20px);
+    }
+
+    .winkelmandje {
+        margin: 25px;
+        padding: 25px;
+    }
+
+}
+
+
+/* Telefoons */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 65px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .welkom,
+    .over-ons,
+    .verhuur,
+    .contact {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .welkom-tekst,
+    .welkom-afbeelding,
+    .over-ons-tekst,
+    .over-ons-afbeelding,
+    .verhuur-tekst,
+    .verhuur-afbeelding,
+    .contact-info,
+    .contact-formulier {
+        width: 100%;
+    }
+
+    .welkom-tekst h1 {
+        font-size: 30px;
+    }
+
+    .welkom-tekst p {
+        font-size: 17px;
+    }
+
+    .over-ons-tekst h2,
+    .fietsen h2 {
+        font-size: 30px;
+    }
+
+    .over-ons-afbeelding img {
+        height: 250px;
+    }
+
+    .fiets-overzicht,
+    .fietsen-overzicht,
+    .voordelen,
+    .verhuur-overzicht {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .fiets-kaart,
+    .fiets,
+    .voordeel,
+    .verhuur-kaart {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .uitgelichte-fietsen,
+    .fietsen,
+    .verhuur-fietsen,
+    .waarom-ons {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .contact-formulier {
+        padding: 20px;
+    }
+
+    .footer-inhoud {
+        flex-direction: column;
+        padding: 35px 25px;
+        gap: 25px;
+    }
+
+    .footer-kolom {
+        width: 100%;
+    }
+
+    .footer-onderkant {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-onderkant div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .voorwaarden,
+    .privacy {
+        padding: 30px 20px;
+    }
+
+    .voorwaarden h2,
+    .privacy h2 {
+        font-size: 30px;
+    }
+
+    .winkelmandje {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .winkelmandje h2 {
+        font-size: 28px;
+    }
+
+    .fiets-keuze {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .fiets-keuze img {
+        width: 90px;
+        height: 80px;
+    }
+
+    .fiets-info {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .fiets-info h3 {
+        font-size: 17px;
+    }
+
+    .fiets-prijs {
+        width: 100%;
+        text-align: right;
+        font-size: 18px;
+    }
+
+    #totaalprijs {
+        font-size: 22px;
+    }
+
+    .winkelmandje > button {
+        width: 100%;
+        margin-top: 10px;
+    }
