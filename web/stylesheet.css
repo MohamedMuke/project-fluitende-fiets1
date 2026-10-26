@@ -293,10 +293,12 @@ footer {
 
 .contact {
     display: flex;
+    gap: 50px;
 }
 
 .contact-info {
     width: 50%;
+    flex: 1;
 }
 
 .contact-formulier {
@@ -304,6 +306,7 @@ footer {
     padding: 30px;
     border: 1px solid #dddddd;
     border-radius: 10px;
+    flex: 1;
 }
 
 .contact-formulier form {
