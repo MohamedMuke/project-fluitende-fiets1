@@ -9,12 +9,13 @@
     <title>Home - Fluitende Fietser</title>
 
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/logo20x20.png">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header -->
+    
     <header>
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="Logo Fluitende Fietser">
@@ -33,8 +34,6 @@
 
 
     <main>
-
-        <!-- Welkomstgedeelte -->
         <section class="welkom">
             <div class="welkom-tekst">
                 <h1>Welkom bij de Fluitende Fietser</h1>
@@ -47,11 +46,15 @@
                 <a href="fietsen.html" class="knop">
                     Bekijk onze fietsen
                 </a>
+                 <div id="Openingtijden">
+                        <div id="clock">00:00:00</div>
+                        <div id="statusContainer">
+                    <div id="statusText">We controleren de openingstijden...</div>
+                </div>
+            </div>
             </div>
         </section>
 
-
-        <!-- Fotocarrousel -->
         <section class="home-slideshow">
 
             <div class="slideshow-container">
@@ -103,7 +106,6 @@
 
             </div>
 
-            <!-- Bolletjes onder de foto's -->
             <div class="slide-punten">
                 <span class="home-slide-punt"
                       onclick="kiesFotocarrousel(1)"></span>
@@ -121,7 +123,6 @@
         </section>
 
 
-        <!-- Uitgelichte fietsen -->
         <section class="uitgelichte-fietsen">
 
             <h2>Onze fietsen</h2>
@@ -161,6 +162,7 @@
                     <a href="fietsen.html" class="knop">
                         Bekijk fiets
                     </a>
+                
                 </div>
 
 
