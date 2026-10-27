@@ -56,27 +56,50 @@ if (formulier) {
     };
 }
 
-var volgendeFoto = document.getElementById("volgendeFoto");
-var carouselFoto = document.getElementById("carouselFoto");
-var fotos = [
-    "images/sfeer1.jpg",
-    "images/sfeer2.jpg",
-    "images/sfeer3.jpg",
-    "images/sfeer4.jpg"
-];
-var huidigeFoto = 0;
+let huidigeFotoSlide = 1;
 
-if (volgendeFoto && carouselFoto) {
-    volgendeFoto.onclick = function () {
-        huidigeFoto = huidigeFoto + 1;
+function toonFotocarrousel(nummer) {
+    let slides = document.getElementsByClassName("home-slide");
+    let punten = document.getElementsByClassName("home-slide-punt");
 
-        if (huidigeFoto >= fotos.length) {
-            huidigeFoto = 0;
-        }
+    if (slides.length == 0) {
+        return;
+    }
 
-        carouselFoto.src = fotos[huidigeFoto];
-    };
+    if (nummer > slides.length) {
+        nummer = 1;
+    }
+
+    if (nummer < 1) {
+        nummer = slides.length;
+    }
+
+    huidigeFotoSlide = nummer;
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < punten.length; i++) {
+        punten[i].className = punten[i].className.replace(" actief", "");
+    }
+
+    slides[huidigeFotoSlide - 1].style.display = "block";
+    punten[huidigeFotoSlide - 1].className += " actief";
 }
+
+function veranderFotocarrousel(stap) {
+    toonFotocarrousel(huidigeFotoSlide + stap);
+}
+
+function kiesFotocarrousel(nummer) {
+    toonFotocarrousel(nummer);
+}
+
+toonFotocarrousel(huidigeFotoSlide);
+
+
+
 
 function berekenTotaal() {
     var totaal = 0;
@@ -159,5 +182,15 @@ function afrekenen() {
         alert("Je kunt nu verder met betalen.");
     }
 }
+if (carouselFoto) {
+    setInterval(function () {
+        huidigeFoto = huidigeFoto + 1;
 
+        if (huidigeFoto >= fotos.length) {
+            huidigeFoto = 0;
+        }
+
+        carouselFoto.src = fotos[huidigeFoto];
+    }, 3000);
+}
 

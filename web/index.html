@@ -1,18 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluitende Fietser</title>
+
+    <title>Home - Fluitende Fietser</title>
+
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+
+    <!-- Header -->
     <header>
         <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="fluitende fietser">
-             <h1>Fluitende Fietser</h1>
+            <img src="images/logo.png" alt="Logo Fluitende Fietser">
+            <h1>Fluitende Fietser</h1>
         </a>
-       
+
         <nav>
             <a href="index.html">Home</a>
             <a href="fietsen.html">Fietsen</a>
@@ -22,136 +30,229 @@
             <a href="winkelmandje.html">Winkelmandje</a>
         </nav>
     </header>
+
+
     <main>
+
+        <!-- Welkomstgedeelte -->
         <section class="welkom">
-    <div class="welkom-tekst">
-        <h1>Welkom bij de fluitende Fietser</h1>
+            <div class="welkom-tekst">
+                <h1>Welkom bij de Fluitende Fietser</h1>
 
-        <p>
-            Ontdek onze fietsen en vind de fiets die bij jou past.
-        </p>
+                <p>
+                    Ontdek onze fietsen en vind de fiets
+                    die bij jou past.
+                </p>
 
-        <a href="fietsen.html" class="knop">Bekijk onze fietsen</a>
-
-        <div id="Openingtijden">
-            <div id="clock">00:00:00</div>
-
-            <div id="statusContainer">
-                <div id="statusText">We zijn geopend</div>
+                <a href="fietsen.html" class="knop">
+                    Bekijk onze fietsen
+                </a>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="welkom-afbeelding fotocarrousel">
-        <img id="carouselFoto"
-             src="images/sfeer1.jpg"
-             alt="Sfeerfoto van onze fietsen">
 
-        <button id="volgendeFoto">Volgende foto →</button>
-    </div>
-</section>
+        <!-- Fotocarrousel -->
+        <section class="home-slideshow">
 
+            <div class="slideshow-container">
+
+                <div class="home-slide">
+                    <img src="images/sfeer1.jpg"
+                         alt="Sfeer bij de Fluitende Fietser">
+
+                    <div class="slide-bijschrift">
+                        Welkom bij de Fluitende Fietser
+                    </div>
+                </div>
+
+                <div class="home-slide">
+                    <img src="images/sfeer2.jpg"
+                         alt="Onze fietsenwinkel">
+
+                    <div class="slide-bijschrift">
+                        Ontdek onze fietsen
+                    </div>
+                </div>
+
+                <div class="home-slide">
+                    <img src="images/sfeer3.jpg"
+                         alt="Fietsen bij de Fluitende Fietser">
+
+                    <div class="slide-bijschrift">
+                        Vind de fiets die bij jou past
+                    </div>
+                </div>
+
+                <div class="home-slide">
+                    <img src="images/sfeer4.jpg"
+                         alt="Sfeerfoto van de fietsenwinkel">
+
+                    <div class="slide-bijschrift">
+                        We helpen je graag verder
+                    </div>
+                </div>
+
+                <!-- Vorige en volgende foto -->
+                <a class="slide-vorige"
+                   onclick="veranderFotocarrousel(-1)"
+                   aria-label="Vorige foto">&#10094;</a>
+
+                <a class="slide-volgende"
+                   onclick="veranderFotocarrousel(1)"
+                   aria-label="Volgende foto">&#10095;</a>
+
+            </div>
+
+            <!-- Bolletjes onder de foto's -->
+            <div class="slide-punten">
+                <span class="home-slide-punt"
+                      onclick="kiesFotocarrousel(1)"></span>
+
+                <span class="home-slide-punt"
+                      onclick="kiesFotocarrousel(2)"></span>
+
+                <span class="home-slide-punt"
+                      onclick="kiesFotocarrousel(3)"></span>
+
+                <span class="home-slide-punt"
+                      onclick="kiesFotocarrousel(4)"></span>
+            </div>
+
+        </section>
+
+
+        <!-- Uitgelichte fietsen -->
         <section class="uitgelichte-fietsen">
+
             <h2>Onze fietsen</h2>
 
             <p class="intro-fietsen">
                 Bekijk een aantal van onze populaire fietsen.
             </p>
-        <div class="fiets-overzicht">
-            <div class="fiets-kaart">
-                <img src="images/fietsen/Pelikaan_Carry_On_Lady.jpg" alt="fiets">
-                <h3>Pelikaan carry on lady</h3>
-                <p>
-                    Een korte beschrijving van de fiets.
-                </p>
-                <a href="fietsen.html" class="knop">
-                    Bekijk fiets
-                </a>
+
+            <div class="fiets-overzicht">
+
+                <div class="fiets-kaart">
+                    <img src="images/fietsen/Pelikaan_Carry_On_Lady.jpg"
+                         alt="Pelikaan Carry On Lady">
+
+                    <h3>Pelikaan Carry On Lady</h3>
+
+                    <p>
+                        Een praktische fiets voor dagelijks gebruik.
+                    </p>
+
+                    <a href="fietsen.html" class="knop">
+                        Bekijk fiets
+                    </a>
+                </div>
+
+
+                <div class="fiets-kaart">
+                    <img src="images/fietsen/Gazelle_Orange_C7.jpg"
+                         alt="Gazelle Orange C7">
+
+                    <h3>Gazelle Orange C7</h3>
+
+                    <p>
+                        Een comfortabele fiets voor langere ritten.
+                    </p>
+
+                    <a href="fietsen.html" class="knop">
+                        Bekijk fiets
+                    </a>
+                </div>
+
+
+                <div class="fiets-kaart">
+                    <img src="images/fietsen/Stella_Allegra_voorwielmotor.jpg"
+                         alt="Stella Allegra">
+
+                    <h3>Stella Allegra</h3>
+
+                    <p>
+                        Een elektrische fiets voor comfortabel fietsen.
+                    </p>
+
+                    <a href="fietsen.html" class="knop">
+                        Bekijk fiets
+                    </a>
+                </div>
 
             </div>
-            <div class="fiets-kaart">
-                <img alt="fiets" src="images/fietsen/Gazelle_Orange_C7.jpg">
-                <h3>
-                   Gazelle Orange
-                </h3>
-                <p>
-                    Een korte beschrijving van de fiets
-                </p>
-                <a href="fietsen.html" class="knop">
-                    Bekijk fiets
-                </a>
 
-            </div>
-            <div class="fiets-kaart">
-                <img  alt="fiets" src="images/fietsen/Gazelle_CityGo_C7.jpg">
-                <h3>
-                   Gazelle CityGo
-                </h3>
-                <p>
-                    Een korte beschrijving van de fiets.
-                </p>
-                <a href="fietsen.html" class="knop">
-                    Bekijk fiets
-                </a>
-            </div>
             <a href="fietsen.html" class="alle-fietsen">
                 Bekijk alle fietsen
             </a>
-        </div>
 
         </section>
 
     </main>
-   <footer>
+
+
+    <!-- Footer -->
+    <footer>
+
         <div class="footer-inhoud">
 
-        <div class="footer-kolom">
-            <h3>Populaire fietsen</h3>
-            <a href="fietsen.html">Gazelle</a>
-            <a href="fietsen.html">Stella</a>
-            <a href="fietsen.html">Pelikaan</a>
-            <a href="fietsen.html">Sparta</a>
-            <a href="fietsen.html">Batavus</a>
+            <div class="footer-kolom">
+                <h3>Populaire fietsen</h3>
+
+                <a href="fietsen.html">Gazelle</a>
+                <a href="fietsen.html">Stella</a>
+                <a href="fietsen.html">Pelikaan</a>
+                <a href="fietsen.html">Sparta</a>
+                <a href="fietsen.html">Batavus</a>
+            </div>
+
+
+            <div class="footer-kolom">
+                <h3>Veel bezocht</h3>
+
+                <a href="fietsen.html">Onze fietsen</a>
+                <a href="verhuur.html">Fietsverhuur</a>
+                <a href="over-ons.html">Over ons</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+
+            <div class="footer-kolom">
+                <h3>Klantenservice</h3>
+
+                <a href="contact.html">Veelgestelde vragen</a>
+                <a href="contact.html">Garantie</a>
+                <a href="contact.html">Reparatie</a>
+                <a href="contact.html">Retourneren</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+
+            <div class="footer-kolom footer-contact">
+                <h3>Wij helpen je graag</h3>
+
+                <h4>Bel ons</h4>
+                <p>025-0224-526</p>
+
+                <h4>Mail ons</h4>
+                <p>info@fluitendefietser.nl</p>
+            </div>
+
         </div>
 
-        <div class="footer-kolom">
-            <h3>Veel bezocht</h3>
-            <a href="fietsen.html">Onze fietsen</a>
-            <a href="verhuur.html">Fietsverhuur</a>
-            <a href="over-ons.html">Over ons</a>
-            <a href="contact.html">Contact</a>
+
+        <div class="footer-onderkant">
+            <p>&copy; 2026 Fluitende Fietser</p>
+
+            <div>
+                <a href="privacy.html">Privacy</a>
+                <a href="algemene-voorwaarden.html">
+                    Algemene voorwaarden
+                </a>
+                <a href="#">Cookies</a>
+            </div>
         </div>
 
-        <div class="footer-kolom">
-            <h3>Klantenservice</h3>
-            <a href="contact.html">Veelgestelde vragen</a>
-            <a href="contact.html">Garantie</a>
-            <a href="contact.html">Reparatie</a>
-            <a href="contact.html">Retourneren</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <div class="footer-kolom footer-contact">
-            <h3>Wij helpen je graag</h3>
-            <h4>Bel ons</h4>
-            <p>025-0224-526</p>
-            <h4>Mail ons</h4>
-            <p>info@fluitendefietser.nl</p>
-        </div>
-
-    </div>
-
-    <div class="footer-onderkant">
-        <p>&copy; 2026 Fluitende Fietser</p>
-
-        <div>
-            <a href="privacy.html">Privacy</a>
-            <a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
-            <a href="#">Cookies</a>
-        </div>
-    </div>
     </footer>
-<script src="script.js"></script>
-    
+
 </body>
 </html>
