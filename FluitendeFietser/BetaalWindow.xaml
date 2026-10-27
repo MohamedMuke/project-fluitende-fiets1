@@ -1,0 +1,170 @@
+﻿<Window x:Class="FluitendeFietser.BetaalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="De Fluitende Fietser - Betalen" Width="900" Height="760" SizeToContent="Manual"
+        MinWidth="390" MinHeight="420" WindowStartupLocation="CenterOwner"
+        Background="#F2F2F2">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+        <Grid Margin="12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,0,0,12">
+                <TextBlock Text="Contant afrekenen" FontSize="25" FontWeight="Bold"/>
+                <TextBlock x:Name="txtTeBetalen" FontSize="18" Margin="0,6,0,0"/>
+            </StackPanel>
+            <!-- WrapPanel zet de panelen automatisch onder elkaar als het venster smaller wordt. -->
+            <WrapPanel Grid.Row="1" HorizontalAlignment="Center">
+                <Border Width="350" Background="White" CornerRadius="8" Padding="12" Margin="4,4,4,8">
+                    <DockPanel>
+                        <TextBlock Text="Ontvangen munten en biljetten" FontSize="17" FontWeight="Bold" DockPanel.Dock="Top" Margin="0,0,0,10"/>
+                        <ScrollViewer VerticalScrollBarVisibility="Disabled">
+                            <StackPanel x:Name="pnlGeld">
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/200 euro.jpg"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="200 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="20000" Click="Min_Click"/>
+                                        <TextBox Tag="20000" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="20000" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/100 euro.jpg"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="100 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="10000" Click="Min_Click"/>
+                                        <TextBox Tag="10000" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="10000" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/50 euro.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="50 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="5000" Click="Min_Click"/>
+                                        <TextBox Tag="5000" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="5000" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/20 euro.jpg"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="20 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="2000" Click="Min_Click"/>
+                                        <TextBox Tag="2000" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="2000" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/10 euro.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="10 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="1000" Click="Min_Click"/>
+                                        <TextBox Tag="1000" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="1000" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/5 euro.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="5 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="500" Click="Min_Click"/>
+                                        <TextBox Tag="500" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="500" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/2 euro.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="2 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="200" Click="Min_Click"/>
+                                        <TextBox Tag="200" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="200" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/1Euro.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="1 euro" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="100" Click="Min_Click"/>
+                                        <TextBox Tag="100" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="100" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/50eurocent.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="50 cent" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="50" Click="Min_Click"/>
+                                        <TextBox Tag="50" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="50" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/20eurocent.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="20 cent" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="20" Click="Min_Click"/>
+                                        <TextBox Tag="20" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="20" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/10eurocent.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="10 cent" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="10" Click="Min_Click"/>
+                                        <TextBox Tag="10" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="10" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,3" VerticalAlignment="Center">
+                                    <Image Source="/foto/5eurocent.png"  Width="72" Height="44" Stretch="Uniform"/>
+                                    <TextBlock Text="5 cent" Width="90" VerticalAlignment="Center" Margin="8,0"/>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                        <Button Content="−" Width="30" Height="30" Padding="0" Tag="5" Click="Min_Click"/>
+                                        <TextBox Tag="5" Width="45" Height="30" Text="0" TextAlignment="Center" VerticalContentAlignment="Center"
+                                                  PreviewTextInput="Aantal_PreviewTextInput" TextChanged="Aantal_TextChanged" DataObject.Pasting="Aantal_Pasting"/>
+                                        <Button Content="+" Width="30" Height="30" Padding="0" Tag="5" Click="Plus_Click"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </DockPanel>
+                </Border>
+                <Border Width="350" Background="White" CornerRadius="8" Padding="16" Margin="4,4,4,8">
+                    <StackPanel>
+                        <TextBlock Text="Of handmatig ontvangen bedrag (€)" TextWrapping="Wrap"/>
+                        <TextBox x:Name="txtHandmatig" Text="0,00" FontSize="17" Margin="0,8,0,12" TextChanged="Handmatig_TextChanged"/>
+                        <TextBlock Text="Totaal ontvangen"/>
+                        <TextBlock x:Name="txtOntvangen" FontSize="25" FontWeight="Bold" Margin="0,3,0,12"/>
+                        <TextBlock x:Name="txtVerschil" FontSize="19" FontWeight="Bold" TextWrapping="Wrap"/>
+                        <TextBlock Text="Wisselgeld in biljetten en munten" FontWeight="Bold" Margin="0,22,0,8"/>
+                        <ScrollViewer MaxHeight="300">
+                            <TextBlock x:Name="txtWisselgeld" TextWrapping="Wrap" FontSize="15"/>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Border>
+            </WrapPanel>
+            <WrapPanel Grid.Row="2" HorizontalAlignment="Right" Margin="0,14,0,0">
+                <Button Content="Annuleren" Width="120" Padding="12" Margin="0,0,10,0" Click="Annuleren_Click"/>
+                <Button x:Name="btnBevestigen" Content="Betaling bevestigen" Width="190" Padding="12" Background="#222222" Foreground="White" Click="Bevestigen_Click"/>
+            </WrapPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>
